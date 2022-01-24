@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lógica de Programação JavaScript</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+
+<body>
+    <h1>Lógica de Programação JavaScript</h1>
+
+    <script>
+        /* Pedir para o usuário digitar dois números e mostrar uma mensagem
+        informando se ele foi aprovado ou não.
+        A nota de corte é 5 */
+
+        var n1 = prompt("Digite a primeira nota:");
+        n1 = parseFloat(n1);
+
+        var n2 = parseFloat(prompt("Digite a segunda nota"));
+
+        var media = (n1 + n2) / 2;
+
+        if (media > 5) {
+            alert("Parabéns, você passou!");
+            //bloco verdade
+        } else {
+            alert("Que pena, você foi reprovado!")
+            //bloco mentira
+        }
+
+
+
+    </script>
+</body>
+
+</html>
