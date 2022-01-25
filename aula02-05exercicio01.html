@@ -13,45 +13,38 @@
 
 
 
-        var n1 = parseInt(prompt("Número do Jogador 1:")); //fazer jogador1 digitar um numero
+        var nJogador1 = parseInt(prompt("Número do Jogador 1:")); //fazer jogador1 digitar um numero
 
 
-        var n2 = parseInt(prompt("Número do Jogador 2:")); //fazer jogador2 digitar outro numero
+        var nJogador2 = parseInt(prompt("Número do Jogador 2:")); //fazer jogador2 digitar outro numero
 
-        if (n1 == n2) {
-            alert("Deu empate!"); //se forem iguais, mostrar mensagem 'empate'
+
+
+        if (nJogador1 === nJogador2) {
+            alert("Vocês empataram!") //se forem iguais, mostrar mensagem 'empate'
 
         } else {
-            var soteio = parseInt(Math.random() * 2); //sortear um numero entre 0 e 1
-            if (sorteio == 0) { // se o numero sorteado for 0, ganha quem escolher o numero MENOR
-                if (n1 < n2) {
-                    alert("o Jogador 1 venceu");
+            var nSoteio = parseInt(Math.random() * 2); //sortear um numero entre 0 e 1
+
+            if (nSoteio === 0) {
+
+                if (nJogador1 > nJogador2) { // se o numero sorteado for 0, ganha quem escolher o numero MENOR
+                    alert("Ganhou o jogador 1");
 
                 } else {
-                    alert("o Jogador 2 venceu");
+                    alert("Ganhou o jogador 2");
                 }
+
             } else {
-                if (sorteio == 1) { //se o numero sorteado for 1, ganha quem escolher o numero MAIOR
 
-                    if (n1 > n2) {
-                        alert("o Jogador 1 venceu");
-
-                    } else {
-                        alert("o Jogador 2 venceu");
-
-                    }
+                if (nJogador1 < nJogador2) { //se o numero sorteado for 1, ganha quem escolher o numero MAIOR
+                    alert("Ganhou o jogador 2");
+                } else {
+                    alert("Ganhou o jogador 1");
                 }
+
             }
         }
-
-
-
-
-
-
-
-
-
 
     </script>
 </body>

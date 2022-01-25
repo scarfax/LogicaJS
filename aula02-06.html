@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lógica de Programação JavaScript</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+
+<body>
+    <h1>Lógica de Programação JavaScript</h1>
+
+    <script>
+
+        /* Pedir para o usuário digitar dois numeros e mostrar uma mensagem
+           informando se foi aprovado ou não.  
+           
+           A Nota de corte é 5.
+           
+           Contudo, se uma das notas for igual à zero, reprova automaticamente. 
+
+         Operadores lógicos 
+
+         !      Não (not)   1º
+         &&     E (and)     2º
+         ||     Ou (or)     3º
+
+        */
+
+        var nota1 = parseInt(prompt("Digite sua primeira nota:"));
+        var nota2 = parseInt(prompt("Digite sua segunda nota:"));
+
+        var media = (nota1 + nota2) / 2;
+
+        if (nota1 > 0 && nota2 > 0 && media > 5) {
+            alert("Parabéns, você foi aprovado!");
+
+        } else {
+            alert("Que pena, você não passou...");
+        }
+
+
+    </script>
+
+
+    <img src="img/aula02-06.jpg" alt="Tabela Verdade">
+
+</body>
+
+</html>

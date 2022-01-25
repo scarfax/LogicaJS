@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lógica de Programação JavaScript</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+
+<body>
+    <h1>Lógica de Programação JavaScript</h1>
+
+    <script>
+
+        //  Para este exercício, tente reescrever a lógica da aula anterior, 
+        //  mas agora utilizando o operador OU ( || ).
+
+
+        var nota1 = parseInt(prompt("Digite sua primeira nota:"));
+        var nota2 = parseInt(prompt("Digite sua segunda nota:"));
+
+        var media = (nota1 + nota2) / 2;
+
+        if (nota1 == 0 || nota2 == 0 || media < 5) {
+            alert("Que pena, você não passou...");
+
+        } else {
+            alert("Parabéns, você foi aprovado!");
+
+        }
+
+
+    </script>
+</body>
+
+</html>

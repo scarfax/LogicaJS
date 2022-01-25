@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lógica de Programação JavaScript</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+
+<body>
+    <h1>Lógica de Programação JavaScript</h1>
+
+    <script>
+
+        /*Para esse exercício, tente reescrever a lógica que fizemos em um exercício anterior,
+        de modo a torná-la mais curta. Essa tarefa tem por objetivo te fazer pensar em 
+        como solucionar MELHOR um problema. Não tem resposta certa ou errada aqui. Cada pessoa 
+        pode pensar em maneiras diferentes de resolver o mesmo problema. 
+        O que vale aqui é exercitar sua lógica. */
+
+        //fazer jogador1 digitar um numero
+        var nJogador1 = prompt('numero do jogador 1');
+        nJogador1 = parseInt(nJogador1);
+
+        //fazer jogador2 digitar outro numero
+        var nJogador2 = prompt('numero do jogador 2');
+        nJogador2 = parseInt(nJogador2);
+
+        //se forem iguais, mostrar mensagem 'empate'
+        if (nJogador1 === nJogador2) {
+            alert('voces empataram');
+
+        } else {
+
+            var nSorteado = parseInt(Math.random() * 2);
+            alert('Numero Sorteado: ' + nSorteado);
+
+            if ((nSorteado == 0 && nJogador1 < nJogador2) || (nSorteado == 1 && nJogador1 > nJogador2)) {
+                alert('ganhou o jogador 1');
+
+            } else {
+                alert('ganhou o jogador 2');
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>

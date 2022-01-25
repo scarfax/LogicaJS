@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lógica de Programação JavaScript</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+
+<body>
+    <h1>Lógica de Programação JavaScript</h1>
+
+    <script>
+
+        /* Pedir para o usuário digitar um número de 1 a 6.
+           Mostrar na tela uma mensagem diferente para cada número */
+
+        var nome = prompt("Digite seu primeiro nome:");
+        var comprimento = nome.length
+
+
+
+        switch (comprimento) {
+            case 1:
+                alert("Só isso");
+                break;
+
+            case 2:
+                alert("Olá");
+                break;
+
+            case 3:
+                alert("teste");
+                break;
+
+            default:
+                alert("Não deu");
+                break;
+        }
+
+
+        var numero = prompt("Digite algo");
+
+        switch (typeof numero) {
+            case "number":
+                alert("É número");
+                break;
+
+            case "string":
+                alert("É string");
+
+
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>
