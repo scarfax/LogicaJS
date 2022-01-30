@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lógica de Programação JavaScript</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+
+<body>
+    <h1>Lógica de Programação JavaScript</h1>
+
+    <button onclick="mostraTabuada()">Criar tabuada</button>
+    <button onclick="limparTabuada()">Limpar tabuada</button>
+    <div id="output"></div>
+
+    <script>
+
+        /* Pedir para o usuário digitar um número o mostrar a tabuada
+        desse número de 1 a 1000.
+        Deve ter a possibilidade do usuário digitar outro número
+        e também de limpar a tabuada gerada previamente.      */
+
+        function mostraTabuada() {
+            // perguntar o número para o usuário
+            var n = prompt("Digite um número:");
+
+            limparTabuada();
+
+            // converter o número
+            n = parseFloat(n);
+
+            // criar uma variavel que servirá de indice
+            var i = 1;
+
+            // enquanto indice <= 1000
+            // concatena na variavel mensagem
+
+            while (i <= 1000) {
+                mensagem += n + " x " + i + " = " + (n * i) + "<br>";
+                i++;
+            }
+
+            // mostra a mensagem no output    
+
+            output.innerHTML = mensagem;
+
+        }
+
+        function limparTabuada() {
+            mensagem = "";
+            output.innerHTML = mensagem;
+        }
+
+
+    </script>
+</body>
+
+</html>
