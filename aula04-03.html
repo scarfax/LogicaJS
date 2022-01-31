@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lógica de Programação JavaScript</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+
+<body>
+    <h1>Lógica de Programação JavaScript</h1>
+
+    <button onclick="areaAlert(largura, altura)">Mostrar área no Alert</button>
+    <button onclick="areaOutput(largura, altura)">Mostrar área no output</button>
+
+    <div id="output"></div>
+
+    <script>
+
+        /* Pedir para o usuário digitar dois números que
+         representam os lados de um retângulo. Mostrar
+        na tela a área total de duas formas: Num alert ou na
+        div#output (dependendo do botão clicado). Esse código 
+        não precisa ser executado quando a página é aberta. */
+
+        var largura = prompt("Digite a largura do retângulo:");
+        largura = parseFloat(largura);
+
+        var altura = prompt("Digite a altura do retângulo:");
+        altura = parseFloat(altura);
+
+
+
+        function areaAlert() {
+
+            var area = calcularArea(largura, altura);
+            alert("a área total é " + area);
+        }
+
+        function areaOutput() {
+
+            var area = calcularArea(largura, altura);
+            document.querySelector("#output").innerHTML = "a área toral é " + area;
+        }
+
+        function calcularArea(l, a) {
+            return l * a;
+        }
+
+    </script>
+</body>
+
+</html>
