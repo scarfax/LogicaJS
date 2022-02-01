@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lógica de Programação JavaScript</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+
+<body>
+    <h1>Lógica de Programação JavaScript</h1>
+
+    <button onclick="areaAlert(largura, altura)">Mostrar área no Alert</button>
+    <button onclick="areaOutput(largura, altura)">Mostrar área no output</button>
+
+    <div id="output"></div>
+
+    <script>
+
+        /* Pedir para o usuário digitar dois números que representam
+          os lados de um retangulo. Mostrar na tela a área total. 
+          Esse código deve ser executado quando a página é aberta e
+          também quando clicar num botão. O que acontece se o usuário
+          digitar um dado invalido?*/
+
+        var largura = prompt("Digite a largura do retângulo:");
+        largura = parseFloat(largura);
+
+        var altura = prompt("Digite a altura do retângulo:");
+        altura = parseFloat(altura);
+
+        function areaAlert() {
+
+            var area = calcularArea(largura, altura);
+            alert("a área total é " + area);
+        }
+
+        function areaOutput() {
+
+            var area = calcularArea(largura, altura);
+            document.querySelector("#output").innerHTML = "a área toral é " + area;
+        }
+
+        function calcularArea(l, a) {
+
+            if (isNaN(l) || isNaN(a)) {
+                throw new Error("digitar somente números");
+
+            }
+
+
+            return l * a;
+        }
+
+
+    </script>
+</body>
+
+</html>
